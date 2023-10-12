@@ -1,0 +1,10 @@
+SELECT * FROM mysql.user;
+show databases;
+USE albums_db;
+select database ();
+use 311_data;
+select database();
+show tables;
+describe source;
+Show create table source;
+describe source;
