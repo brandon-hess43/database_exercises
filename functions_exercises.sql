@@ -244,12 +244,12 @@
 -- Use concat() to combine their first and last name together as a single column named full_name.
 SELECT CONCAT(first_name, ' ', last_name) AS full_name
 FROM employees
-WHERE last_name LIKE '%e%';
+WHERE last_name LIKE 'e%e';
 
 -- Convert the names produced in your last query to all uppercase.
 SELECT UPPER(CONCAT(first_name, ' ', last_name)) AS full_name
 FROM employees
-WHERE last_name LIKE '%e%';
+WHERE last_name LIKE 'e%e';
 
 -- Use a function to determine how many results were returned from your previous query.
 SELECT COUNT(*) AS result_count
