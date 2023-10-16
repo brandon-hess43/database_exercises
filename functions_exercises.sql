@@ -259,6 +259,10 @@ FROM (
     WHERE last_name LIKE '%e%'
 ) AS subquery;
 
+SELECT COUNT(*) AS result_count
+FROM employees
+WHERE last_name LIKE '%e%';
+
 -- Find all employees hired in the 90s and born on Christmas. 
 -- Use datediff() function to find how many days they have been working at the company 
 -- (Hint: You will also need to use NOW() or CURDATE()),
