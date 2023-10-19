@@ -153,10 +153,6 @@ from salaries
 WHERE to_date LIKE '9999-01-01')) * '100' AS Percent;
 
 
-/* 
-The above should be the answer to the first question but I'm not sure if it is 
-because our internet is worst than my great aunt tilda's. Everything's fine, I'm fine, it's fine 
-*/
 
 Select count(salary)
 from salaries
