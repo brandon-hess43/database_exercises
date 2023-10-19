@@ -252,12 +252,9 @@ FROM employees
 WHERE last_name LIKE 'e%e';
 
 -- Use a function to determine how many results were returned from your previous query.
-SELECT COUNT(*) AS result_count
-FROM (
-    SELECT UPPER(CONCAT(first_name, ' ', last_name)) AS full_name
-    FROM employees
-    WHERE last_name LIKE '%e%'
-) AS subquery;
+SELECT Count(UPPER(CONCAT(first_name, ' ', last_name))) AS full_name
+FROM employees
+WHERE last_name LIKE 'e%e';
 
 SELECT COUNT(*) AS result_count
 FROM employees
